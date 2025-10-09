@@ -3,6 +3,7 @@ import App from './App.vue'
 
 // Importar CSS Global
 import './assets/css/global.css'
+import { vScrollReveal } from './directives/scrollReveal'
 
 // Configuração do Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -29,6 +30,8 @@ library.add(
 )
 
 const app = createApp(App)
+
+app.directive('scroll-reveal', vScrollReveal)
 
 // Registrar o componente globalmente
 app.component('font-awesome-icon', FontAwesomeIcon)

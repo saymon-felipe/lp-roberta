@@ -1,7 +1,7 @@
 <template>
-  <section class="hero-section">
+  <section class="hero-section" style="padding-top: 120px;">
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         <h1>Cuidando da sua <span class="highlight">saúde mental</span> com acolhimento e profissionalismo</h1>
         <p>Sou Roberta Romanholi, psicóloga clínica com mais de 15 anos de formação e 8 de atuação contínua na comunidade. Acredito que todos merecem um espaço seguro para se autoconhecer.</p>
         <div class="stats">
@@ -14,7 +14,7 @@
           <a href="#sobre" class="btn btn-secondary">Conhecer Meu Trabalho</a>
         </div>
       </div>
-      <div class="hero-image">
+      <div class="hero-image prevent-flicker" v-scroll-reveal="{ delay: 700, origin: 'bottom' }">
         <img src="@/assets/images/roberta-hero.webp" alt="Psicóloga Roberta Romanholi">
       </div>
     </div>

@@ -5,7 +5,7 @@
         <div class="footer-col about">
           <h4>Roberta Romanholi</h4>
           <p>Psicóloga clínica especializada em terapia cognitivo-comportamental. Oferecendo um espaço seguro para seu crescimento pessoal e bem-estar emocional.</p>
-          <p>CRP 12/34567 - Ativa desde 2019</p>
+          <p>CRP 08/17110 - Ativa desde 2010</p>
         </div>
         <div class="footer-col navigation">
           <h4>Navegação</h4>
@@ -19,21 +19,21 @@
         </div>
         <div class="footer-col contact">
           <h4>Contato</h4>
-          <p><font-awesome-icon :icon="['fas', 'phone']" /> (11) 99999-9999</p>
+          <p><font-awesome-icon :icon="['fas', 'phone']" /> (43) 9 9989-6773</p>
           <p><font-awesome-icon :icon="['fas', 'envelope']" /> contato@robertaromanholi.com.br</p>
-          <p><font-awesome-icon :icon="['fas', 'location-dot']" /> Rua Augusta, 123 - São Paulo, SP</p>
+          <p><font-awesome-icon :icon="['fas', 'location-dot']" /> Av. Arthur Thomaz, 831 Sala 4, Londrina - PR</p>
         </div>
         <div class="footer-col social">
             <h4>Redes Sociais</h4>
             <div class="social-icons">
-                <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
-                <a href="#"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
-                <a href="#"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+                <a href="https://www.instagram.com/psi.romanholi_roberta/" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+                <a href="#" v-if="false"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
+                <a href="#" v-if="false"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
             </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 Roberta Romanholi - Psicóloga CRP 12/34567. Todos os direitos reservados.</p>
+        <p>© {{ year }} Roberta Romanholi - Psicóloga CRP 08/17110. Todos os direitos reservados.</p>
         <p>Este site segue o Código de Ética Profissional do Psicólogo e a Lei de Proteção de Dados (LGPD).</p>
       </div>
     </div>
@@ -42,7 +42,12 @@
 
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            year: new Date().getFullYear()
+        }
+    }
 }
 </script>
 

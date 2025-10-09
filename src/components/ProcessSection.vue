@@ -1,9 +1,9 @@
 <template>
   <section class="process-section">
     <div class="container">
-      <h2>Como funciona o <span class="highlight">processo terapêutico?</span></h2>
-      <p class="section-subtitle">Minha abordagem é baseada na Terapia Cognitivo-Comportamental, focando em resultados práticos e duradouros.</p>
-      <div class="steps-grid">
+      <h2 class="prevent-flicker" v-scroll-reveal="{ delay: 100, origin: 'bottom' }">Como funciona o <span class="highlight">processo terapêutico?</span></h2>
+      <p class="section-subtitle prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">Minha abordagem é baseada na Terapia Cognitivo-Comportamental, focando em resultados práticos e duradouros.</p>
+      <div class="steps-grid prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         <div class="step-card">
           <div class="step-number">1</div>
           <h3>Acolhimento</h3>

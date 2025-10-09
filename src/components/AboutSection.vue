@@ -1,20 +1,20 @@
 <template>
   <section class="about-section">
     <div class="container">
-      <div class="about-image">
+      <div class="about-image prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">
         <img src="@/assets/images/ambiente-acolhedor.webp" alt="Ambiente acolhedor do consultório">
         <div class="image-card">
           <h3>Ambiente Acolhedor</h3>
           <p>Um espaço pensado para seu conforto e bem-estar</p>
         </div>
       </div>
-      <div class="about-content">
+      <div class="about-content prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         <h2>Sobre Roberta Romanholi</h2>
         <p>Formada em Psicologia pela Universidade de São Paulo, com especialização em Terapia Cognitivo-Comportamental e Mindfulness. Minha missão é oferecer um espaço seguro e acolhedor para que você possa explorar seus sentimentos, desenvolver novas perspectivas e alcançar o bem-estar emocional.</p>
         <p>Acredito que cada pessoa é única e merece um atendimento personalizado. Por isso, adapto minha abordagem às suas necessidades específicas, sempre respeitando seu ritmo e suas particularidades.</p>
         <ul class="info-list">
           <li><font-awesome-icon :icon="['fas', 'graduation-cap']" /> <strong>Formação:</strong> Psicologia - USP, Especialização em TCC</li>
-          <li><font-awesome-icon :icon="['fas', 'id-card']" /> <strong>Registro:</strong> CRP 08/17110 Ativa desde 2017</li>
+          <li><font-awesome-icon :icon="['fas', 'id-card']" /> <strong>Registro:</strong> CRP 08/17110 Ativa desde 2010</li>
           <li><font-awesome-icon :icon="['fas', 'heart-pulse']" /> <strong>Especialidades:</strong> Ansiedade, Depressão, Relacionamentos</li>
           <li><font-awesome-icon :icon="['fas', 'briefcase']" /> <strong>Experiência:</strong> +500 atendimentos, +15 anos de prática</li>
         </ul>

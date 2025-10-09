@@ -1,5 +1,5 @@
 <template>
-  <header class="main-header">
+  <header class="main-header prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">
     <div class="container">
       <a href="#inicio" class="logo">
         <img src="@/assets/images/logo.png" alt="Logo Roberta Romanholi" />
@@ -48,8 +48,10 @@ export default {
 .main-header {
   background: white;
   padding: 15px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }

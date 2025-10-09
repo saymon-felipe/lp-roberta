@@ -1,10 +1,10 @@
 <template>
   <section class="pricing-section">
     <div class="container">
-      <h2>Escolha o pacote ideal para você</h2>
-      <p class="section-subtitle">Ofertas especiais para começar sua jornada de autoconhecimento e bem-estar. Todos os pacotes incluem primeira sessão gratuita!</p>
+      <h2 class="prevent-flicker" v-scroll-reveal="{ delay: 100, origin: 'bottom' }">Escolha o pacote ideal para você</h2>
+      <p class="section-subtitle prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">Ofertas especiais para começar sua jornada de autoconhecimento e bem-estar. Todos os pacotes incluem primeira sessão gratuita!</p>
       
-      <div class="pricing-grid">
+      <div class="pricing-grid prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         <div class="pricing-card">
           <h3>Sessão Individual</h3>
           <p class="description">Ideal para quem quer experimentar ou tem necessidades pontuais.</p>

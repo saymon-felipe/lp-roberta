@@ -1,9 +1,9 @@
 <template>
   <section class="testimonials-section">
     <div class="container">
-      <h2>O que dizem meus pacientes</h2>
-      <p class="section-subtitle">Cada história é única, mas o objetivo é o mesmo: proporcionar bem-estar, crescimento pessoal e uma vida mais plena e satisfatória.</p>
-      <div class="testimonials-grid">
+      <h2 class="prevent-flicker" v-scroll-reveal="{ delay: 100, origin: 'bottom' }">O que dizem meus pacientes</h2>
+      <p class="section-subtitle prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">Cada história é única, mas o objetivo é o mesmo: proporcionar bem-estar, crescimento pessoal e uma vida mais plena e satisfatória.</p>
+      <div class="testimonials-grid prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         
         <div class="testimonial-card">
           <font-awesome-icon class="quote-icon" :icon="['fas', 'quote-left']" />

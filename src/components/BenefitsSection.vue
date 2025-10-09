@@ -1,9 +1,9 @@
 <template>
   <section class="benefits-section">
     <div class="container">
-      <h2>Por que a Terapia é importante?</h2>
-      <p class="section-subtitle">A terapia é um investimento em você mesmo. É um espaço seguro para explorar seus sentimentos, desenvolver habilidades emocionais e criar uma vida mais plena e significativa.</p>
-      <div class="benefits-grid">
+      <h2 class="prevent-flicker" v-scroll-reveal="{ delay: 100, origin: 'bottom' }">Por que a Terapia é importante?</h2>
+      <p class="section-subtitle prevent-flicker" v-scroll-reveal="{ delay: 300, origin: 'bottom' }">A terapia é um investimento em você mesmo. É um espaço seguro para explorar seus sentimentos, desenvolver habilidades emocionais e criar uma vida mais plena e significativa.</p>
+      <div class="benefits-grid prevent-flicker" v-scroll-reveal="{ delay: 500, origin: 'bottom' }">
         <div class="benefit-card">
           <div class="icon-wrapper"><font-awesome-icon :icon="['fas', 'lightbulb']" /></div>
           <h3>Autoconhecimento</h3>
